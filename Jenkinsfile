@@ -1,19 +1,24 @@
 pipeline {
   agent any
   stages {
-    stage("Build") {
+    stage("Create Docker Container") {
       steps {
         echo "building..."
       }
     }
-    stage("Test") {
+    stage("Triggering Proxy Creation") {
       steps {
         echo "testing..."
       }
     }
-    stage("Package") {
+    stage("Testing Build Instance") {
       steps {
         echo "packaging..."
+      }
+    }
+    stage("Completing Compiling") {
+      steps {
+        echo "wrapping..."
       }
     }
   }
