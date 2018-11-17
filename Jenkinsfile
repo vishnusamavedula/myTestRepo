@@ -3,22 +3,22 @@ pipeline {
   stages {
     stage("Create Docker Container") {
       steps {
-        echo "building..."
+        echo "building container..."
       }
     }
-    stage("Triggering Proxy Creation") {
+    stage("Deploying System API") {
       steps {
-        echo "testing..."
+        echo "sAPI deploying..."
       }
     }
-    stage("Testing Build Instance") {
+    stage("Deploying Process API") {
       steps {
-        echo "packaging..."
+        echo "pAPI deploying..."
       }
     }
-    stage("Completing Compiling") {
+    stage("Deploying Experience API") {
       steps {
-        echo "wrapping..."
+        echo "eAPI deploying..."
       }
     }
   }
